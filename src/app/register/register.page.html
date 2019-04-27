@@ -1,0 +1,33 @@
+
+<ion-content padding>
+        <h1>Recmo</h1>
+    
+        <ion-card>
+          <ion-card-header>
+            REGISTER
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-label position="floating">Username</ion-label>
+                    <ion-input [(ngModel)]="username"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label position="floating">Email</ion-label>
+                      <ion-input [(ngModel)]="email"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Password</ion-label>
+                        <ion-input [(ngModel)]="password"></ion-input>
+                      </ion-item>
+
+                      <ion-button shape="round" color="primary">Register</ion-button>
+            </ion-list>
+      
+          </ion-card-content>
+        </ion-card>
+        
+      
+</ion-content>

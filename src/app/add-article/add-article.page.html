@@ -1,0 +1,43 @@
+  
+  <ion-content padding>
+    <h3 text-center>Ajouter un article</h3>
+    <ion-list>
+      <ion-item>
+        <ion-label color="primary" fixed >Nom</ion-label>
+        <ion-input type="text" [(ngModel)] = "nom"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label color="primary" fixed >Prix</ion-label>
+        <ion-input type="text" [(ngModel)] = "prix"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label color="primary" fixed >Remise</ion-label>
+        <ion-input type="numeric" [(ngModel)] = "remise"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label color="primary" fixed >Stock</ion-label>
+        <ion-input type="numeric" [(ngModel)] = "stock"></ion-input>
+      </ion-item>
+    
+      <ion-row>
+          <ion-col>
+              <ion-button  color="primary" (click)= "addArticle()">
+                  <ion-icon slot="start" name="create"></ion-icon>
+                  Sauvegarder
+                </ion-button>
+          </ion-col>
+  
+          <ion-col>
+              <ion-button  color="danger" (click)= "closeModal()">
+                  <ion-icon slot="start" name="backspace"></ion-icon>
+                  Annuler
+                </ion-button>
+          </ion-col>
+        </ion-row>
+  
+    </ion-list>
+  </ion-content>
+  
